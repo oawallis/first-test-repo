@@ -1,0 +1,1 @@
+export function shouldBlockReplayForBillingSync(tenantPlan: string, replayAgeHours: number): boolean {\n  return tenantPlan === 'enterprise' && replayAgeHours > 72;\n}\n
