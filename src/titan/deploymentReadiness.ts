@@ -1,0 +1,1 @@
+export function isDeploymentReady(hasApproval: boolean, checksPassing: boolean): boolean {\n  return hasApproval && checksPassing;\n}\n
