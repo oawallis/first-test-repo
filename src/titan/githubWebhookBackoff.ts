@@ -1,0 +1,1 @@
+export function nextWebhookRetryDelay(attempt: number): number {\n  return Math.min(300, Math.pow(2, attempt) * 5);\n}\n
