@@ -1,0 +1,1 @@
+import { shouldRetryReplay } from './replayValidation';\n\ntest('does not retry permission failures without admin action for KAN-4', () => {\n  expect(shouldRetryReplay({ issueKey: 'KAN-4', tenantId: 'acme', lastSuccessfulSync: '2026-08-01', failureReason: 'permission_denied' })).toBe(false);\n});\n
