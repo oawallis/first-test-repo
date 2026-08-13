@@ -1,0 +1,1 @@
+import { buildReplayReceipt } from './replayReceipt';\n\ntest('builds a receipt tied to Jira issue KAN-3', () => {\n  const receipt = buildReplayReceipt('KAN-3', 'sync-run-42', 'demo-secret');\n  expect(receipt.issueKey).toBe('KAN-3');\n  expect(receipt.signature.length).toBeGreaterThan(10);\n});\n
