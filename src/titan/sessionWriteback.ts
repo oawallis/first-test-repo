@@ -1,0 +1,1 @@
+export type SessionWriteback = {\n  issueKey: 'KAN-8';\n  actor: 'human' | 'agent';\n  summary: string;\n};\n\nexport const draftWriteback: SessionWriteback = {\n  issueKey: 'KAN-8',\n  actor: 'agent',\n  summary: 'Draft branch created, no PR opened yet'\n};\n
